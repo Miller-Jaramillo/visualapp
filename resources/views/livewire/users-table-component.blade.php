@@ -13,7 +13,7 @@
             <div
                 class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-md rounded-md border dark:border-indigo-800  border-indigo-500 ">
                 <div class="grid grid-cols-1 sm:grid-cols-10 flex justify-between  px-4 py-3 sm:px-6">
-                    @role('admin')
+
                         <div class="col-span-7 flex justify-center">
                             <div class="grid grid-cols-12 sm:grid-cols-12  ">
 
@@ -110,7 +110,7 @@
 
                             </div>
                         </div>
-                    @endrole
+
 
 
 
@@ -126,9 +126,7 @@
                                 <select wire:model="selectedRole"
                                     class="  dark:border-indigo-900 border-indigo-200 outline-none bg-indigo-50 text-gray-500 text-sm rounded-md dark:bg-gray-900 block mt-1">
                                     <option value="todos">Todos los usuarios</option>
-                                    @role('admin')
                                         <option value="administradores">Administradores</option>
-                                    @endrole
                                     <option value="usuarios">Usuarios</option>
                                 </select>
                             </div>
