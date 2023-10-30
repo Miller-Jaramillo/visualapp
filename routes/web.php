@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\RegisteredAdminController;
 use App\Http\Controllers\RegisterUserController;
+use App\Livewire\Admin\RegistrosComponent;
 use App\Livewire\UsersTableComponent;
 use Illuminate\Support\Facades\Route;
 
@@ -37,4 +38,6 @@ Route::middleware([
     })->name('dashboard');
 
     Route::get('/users', UsersTableComponent::class)->name('users');
+
+    Route::get('/registros', RegistrosComponent::class)->name('registros');
 });

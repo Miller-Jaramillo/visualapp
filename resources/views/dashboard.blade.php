@@ -8,10 +8,17 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
-                <div wire:poll.5000ms>
-                    <livewire:charts.bar-chart-component>  </livewire:charts.bar-chart-component>
+
+                <div>
+                    <livewire:charts.bar-chart-component :wire:key="'bar-chart'" />
                 </div>
+
+                <div>
+                    <livewire:charts.dona-chart-component :wire:key="'dona-chart'" />
+                </div>
+
             </div>
         </div>
     </div>
+    @livewireScripts
 </x-app-layout>

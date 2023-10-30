@@ -39,9 +39,9 @@
           data: {
             labels: labels,
             datasets: [{
-              label: 'Cantidad de Usuarios por Rol',
+              label: 'Registro de accidentes por genero',
               data: counts,
-              backgroundColor: customColors, // Usamos el array de colores personalizados
+              backgroundColor: customColors2, // Usamos el array de colores personalizados
             borderColor: customColors.map(color => color.replace('0.2', '1')), // Colores de borde
 
               borderWidth: 1
@@ -60,7 +60,7 @@
 
       </script>
 
-    
+
 
 
 
