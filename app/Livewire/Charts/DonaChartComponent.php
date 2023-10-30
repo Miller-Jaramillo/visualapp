@@ -3,6 +3,7 @@
 namespace App\Livewire\Charts;
 
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 
 
@@ -29,7 +30,7 @@ class DonaChartComponent extends Component
     public function refreshData()
     {
         // Obtén los datos de la base de datos
-        $userData = User::select('role_name', \DB::raw('count(*) as count'))
+        $userData = User::select('role_name', DB::raw('count(*) as count'))
             ->groupBy('role_name')
             ->get();
 

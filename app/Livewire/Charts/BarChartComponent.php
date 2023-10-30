@@ -27,11 +27,11 @@ class BarChartComponent extends Component
         $this->refreshData();
     }
 
-    
+
     public function refreshData2()
     {
         // Obtén los datos de la base de datos
-        $userData = User::select('role_name', \DB::raw('count(*) as count'))
+        $userData = User::select('role_name', DB::raw('count(*) as count'))
             ->groupBy('role_name')
             ->get();
 
